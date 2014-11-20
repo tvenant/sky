@@ -25,6 +25,9 @@ def counter(value):
 def which_browser():
     user_agent = request.headers.get('User-Agent')
     return render_template('browser.html',browser=user_agent)
+@app.route('/test')
+def testing():
+    pass
 
 bootstrap = Bootstrap(app)
 if __name__ == '__main__':
